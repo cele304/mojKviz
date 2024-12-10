@@ -14,7 +14,7 @@ let questions = [];
 let answerChecked = false; // Praćenje je li odgovor provjeren
 
 // Učitaj pitanja sa servera i promiješaj ih
-fetch('http://localhost:3000/questions')
+fetch('https://moja-potjera.onrender.com/questions')
   .then(response => response.json())
   .then(data => {
     questions = shuffleArray(data); // Promiješaj pitanja
