@@ -1,5 +1,5 @@
-let teamTimeLeft = 60;
-let hunterTimeLeft = 60;
+let teamTimeLeft = 120;
+let hunterTimeLeft = 120;
 let teamScore = 1; // Ekipa počinje s 1 bodom prednosti
 let hunterScore = 0;
 let currentQuestionIndex = 0;
