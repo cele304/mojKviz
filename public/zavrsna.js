@@ -193,7 +193,7 @@ function shuffleArray(array) {
 
 // Ponovno pokreni igru
 function restartGame() {
-  window.location.reload();
+  window.location.href = 'index.html';
 }
 
 // Dodavanje Enter tipke za odgovor
