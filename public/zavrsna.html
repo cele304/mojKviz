@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Završna Potjera</title>
+  <link rel="stylesheet" href="zavrsna.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Završna Potjera</h1>
+
+    <!-- Informacije o igri -->
+    <div id="info">
+      <p>Vrijeme preostalo: <span id="time-left">60</span> sekundi</p>
+      <p>Bodovi ekipe: <span id="team-score">1</span></p>
+      <p>Bodovi lovca: <span id="hunter-score">0</span></p>
+      <p>Na redu: <span id="current-turn">Ekipa</span></p>
+    </div>
+
+    <!-- Traka napretka -->
+    <div id="progress-bar">
+      <div id="team-progress" class="progress"></div>
+      <div id="hunter-progress" class="progress"></div>
+    </div>
+
+    <!-- Pitanja -->
+    <div id="question-box">
+      <p id="question"></p>
+      <input type="text" id="user-answer" placeholder="Vaš odgovor">
+      <button onclick="submitTeamAnswer()">Odgovori</button>
+      <button onclick="nextQuestion()">Dalje</button>
+    </div>
+
+    <!-- Povratna informacija -->
+    <div id="feedback"></div>
+
+    <!-- Updated HTML for Transition Message -->
+<div id="transition-message-container">
+  <p id="transition-message" style="display: none;"></p>
+</div>
+
+
+    <!-- Završni ekran -->
+    <div id="end-game" style="display: none;">
+      <h2>Igra je završila!</h2>
+      <p id="result"></p>
+      <p id="transition-message" style="display: none;"></p>
+      <button onclick="restartGame()">Počni iznova</button>
+    </div>
+  </div>
+  <script src="zavrsna.js"></script>
+</body>
+</html>

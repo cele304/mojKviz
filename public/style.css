@@ -1,0 +1,163 @@
+/* Osnovni stilovi */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111; /* Tamna pozadina */
+    color: #fff; /* Bijeli tekst */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    color: #fbc02d; /* Zlatna boja za naslove */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  p {
+    font-size: 1.2em;
+  }
+  
+  /* Login ekran */
+  #login {
+    margin-top: 50px;
+  }
+  
+  #login label {
+    font-size: 1.5em;
+    color: #fbc02d;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 1em;
+    width: 80%;
+    margin: 20px auto;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Gumbi */
+  button {
+    background-color: #0288d1; /* Plava boja gumba */
+    color: #fff;
+    font-size: 1.2em;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0277bd; /* Tamnija plava na hover */
+  }
+  
+  button:active {
+    background-color: #01579b; /* Još tamnija plava pri kliku */
+  }
+  
+  /* Glavni ekran igre */
+  #game {
+    margin-top: 20px;
+  }
+  
+/* Stil za okvir s vremenom i novcem */
+/* Stil za okvir s vremenom i novcem */
+#info {
+    position: fixed;
+    bottom: 20px; /* Pozicija na dnu */
+    left: 50%; /* Centriraj horizontalno */
+    transform: translateX(-50%);
+    display: flex; /* Postavljanje fleksibilnog rasporeda */
+    justify-content: space-between; /* Rasporedi elemente lijevo-desno */
+    align-items: center; /* Vertikalno poravnanje */
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #003399, #0044cc); /* Plavi gradijent */
+    border: 2px solid #fff; /* Bijeli okvir */
+    border-radius: 15px; /* Zaobljeni kutovi */
+    color: #fff; /* Bijeli tekst */
+    font-size: 1.5em;
+    font-weight: bold;
+    max-width: 500px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sjena za 3D efekt */
+    z-index: 1000; /* Prikaži iznad ostalih elemenata */
+  }
+  
+  #info p {
+    margin: 0;
+    padding: 0 15px; /* Dodaj razmak između tekstova */
+    white-space: nowrap; /* Spriječi prelamanje u novi red */
+    text-align: center;
+  }
+  
+  #info span {
+    font-weight: bold; /* Naglašavanje vrijednosti (brojeva) */
+  }
+  
+  
+  
+  #time-remaining span, #current-score span {
+    color: #fbc02d; /* Zlatna za vrijednosti */
+    font-weight: bold;
+  }
+  
+  /* Pitanja i odgovori */
+  #question-box {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #333; /* Tamno siva pozadina */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+  }
+  
+  #question {
+    font-size: 1.8em;
+    margin: 20px 0;
+  }
+  
+  #feedback {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f57c00; /* Narančasta za povratnu informaciju */
+  }
+  
+  /* Završni ekran */
+  #end-game {
+    margin-top: 50px;
+  }
+  
+  #end-game h2 {
+    color: #d32f2f; /* Crvena boja za završni tekst */
+  }
+  
+  #end-game p {
+    font-size: 1.5em;
+    color: #fff;
+  }
+
+  
+
+/* Animacija za prelazak pitanja */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  #question-box {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  

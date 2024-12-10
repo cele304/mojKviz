@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Potjera Kviz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Potjera Kviz</h1>
+    
+    <!-- Forma za unos korisničkog imena -->
+    <div id="login">
+      <label for="username">Unesite svoje ime:</label>
+      <input type="text" id="username" placeholder="Ime korisnika">
+      <button onclick="startGame()">Započni igru</button>
+    </div>
+
+    <!-- Glavni ekran igre -->
+    <div id="game" style="display: none;">
+      <h2>Dobrodošao, <span id="player-name"></span></h2>
+      <div id="info">
+        <p>Iznos: <span id="score">0</span> €</p>
+        <p>Vrijeme: <span id="time-left">60</span> sec</p>
+      </div>          
+      <div id="question-box">
+        <p id="question"></p>
+        <input type="text" id="user-answer" placeholder="Vaš odgovor">
+        <button onclick="submitAnswer()">Odgovori</button>
+        <button onclick="nextQuestion()">Dalje</button>
+      </div>
+      <p id="feedback"></p>            
+    </div>
+
+    <!-- Ekran završetka igre -->
+    <div id="end-game" style="display: none;">
+      <h2>Brzopotezna igra je završila!</h2>
+      <p>Ukupno ste zaradili: <span id="final-score"></span> €</p>
+      <button onclick="goToNextPhase()">Idi na ploču</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
