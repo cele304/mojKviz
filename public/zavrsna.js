@@ -10,7 +10,7 @@ let teamInterval, hunterInterval;
 const totalSteps = 20; // Duljina progress bara u koracima
 
 // Učitaj pitanja sa servera
-fetch('http://localhost:3000/questions')
+fetch('https://moja-potjera.onrender.com/questions')
   .then(response => response.json())
   .then(data => {
     // Podijeli pitanja na dvije različite skupine
